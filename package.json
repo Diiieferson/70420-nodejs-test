@@ -4,7 +4,9 @@
   "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "reactStart": "set PORT=3001 && react-scripts start"
   },
   "keywords": [
     "node",
@@ -14,6 +16,46 @@
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.12",
+    "@mui/icons-material": "^5.15.13",
+    "@mui/material": "^5.15.13",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.17",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "azure": "^2.3.1-preview",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.2",
+    "googleapis": "^134.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "merge-descriptors": "^2.0.0",
+    "mongoose": "^8.2.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.8",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
